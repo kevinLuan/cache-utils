@@ -27,29 +27,32 @@
 	#Jedis事例
 	@JedisCacheKey(key = "test1", expire = 1000, params = "0,1.id")
 	public MockBean getMockBean(int num, MockBean bean) {
-		System.out.println("getMockBean(num,bean)...................." + counted.addAndGet(1));
+		//TODO 业务代码
 		return new MockBean();
 	}
 	@JedisCacheUpdate(key = "test1", params = "0,1.id")
 	public void updateMockBean(int num, MockBean bean) {
+		//TODO 业务代码
 	}
 	#MEMCache事例	
 	@MemCacheKey(key = "test1", expire = 1000, params = "0,1.id")
 	public MockBean getMockBean(int num, MockBean bean) {
-		System.out.println("getMockBean(num,bean)...................." + counted.addAndGet(1));
+		//TODO 业务代码
 		return new MockBean();
 	}
 	@MemCacheUpdate(key = "test1", params = "0,1.id")
 	public void updateMockBean(int num, MockBean bean) {
+		//TODO 业务代码
 	}
 	#EHCache事例
 	@EHCacheKey(key = "test1", cacheName = "cacheName1", expire = 2000, params = "0,1.id")
 	public MockBean getMockBean(int num, MockBean bean) {
-		System.out.println("getMockBean(num,bean)...................." + counted.addAndGet(1));
+		//TODO 业务代码
 		return new MockBean();
 	}
 	@EHCacheUpdate(keys = "test1", cacheNames = "cacheName1", params = "0,1.id")
 	public void updateMockBean(int num, MockBean bean) {
+		//TODO 业务代码
 	}
 	
 		
