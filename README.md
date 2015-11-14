@@ -1,24 +1,25 @@
-#分布式Cache工具
+##分布式Cache工具
 
-##author:kevin Luan
+####author:kevin Luan
 	email: kevin_Luan@126.com
 
-##打包成JAR 包命令
+
+####打包成JAR 包命令
 
 	安装包本地仓库
 	mvn clean compile install -Dmaven.test.skip=true
 	打包成jar包安装到本地仓库并发布到远程私服
 	mvn clean compile install deploy -Dmaven.test.skip=true	
  
-##Running the samples
+####Running the samples
 	运行单元测试事例
 	com.extract.cache.test.*.java
 
-##Importing into eclipse
+####Importing into eclipse
 
 	mvn eclipse:eclipse	
 
-##功能描述
+####功能描述
 	目前实现了redis,memcache,ehcache Api的封装
 	实现原理：基于spring BeanNameProxy实现
 	org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator
